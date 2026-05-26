@@ -1345,7 +1345,7 @@ body.is-cover-open {
 .sealed-section {
   position: relative;
   border-top: 2px dashed var(--line-strong);
-  min-height: 14rem;
+  min-height: 20rem;
   overflow: hidden;
 }
 
@@ -1372,16 +1372,14 @@ body.is-cover-open {
 .seal-overlay {
   position: absolute;
   inset: 0;
-  display: grid;
-  place-content: center;
-  gap: 1rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 2rem 1.5rem 2.25rem;
   text-align: center;
   background: rgba(246, 241, 232, 0.88);
-}
-
-.seal-overlay > * {
-  transform: translateY(0.85rem);
 }
 
 .lock-icon {
