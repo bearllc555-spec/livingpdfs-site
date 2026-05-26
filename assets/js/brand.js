@@ -1,5 +1,5 @@
 (function () {
-  const SITE_VERSION = "v54";
+  const SITE_VERSION = "v55";
   const AUTH_KEY = "livingpdfs_demo_user";
   const DEMO_USER = {
     email: "bearllc555@gmail.com",

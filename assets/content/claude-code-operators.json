@@ -1,0 +1,130 @@
+{
+  "slug": "claude-code-operators",
+  "title": "Claude Code for Operators Who Bill Clients (Not Developers)",
+  "cover": "/assets/covers/claude-code-operators.svg",
+  "category": "AI · Delivery · Living · Ultimate",
+  "totalPages": 62,
+  "currentSection": "Chapter 1 · Operator Mindset",
+  "blocks": [
+    {
+      "heading": "Who this guide is for",
+      "pages": 4,
+      "paragraphs": [
+        "You sell landing pages, automations, dashboards, or retainers—but you are not a career software engineer. Claude Code lets you ship client work by describing outcomes and reviewing diffs. Your value is client communication, scope control, and quality bar—not typing syntax from memory. This guide teaches billing-safe workflows, not computer science degrees.",
+        "Developers may use these patterns too; focus here is speed to invoice. Always test before handoff. Never bill for work you cannot maintain lightly. Ultimate tier includes client-safe prompt packs."
+      ]
+    },
+    {
+      "heading": "Setup: repo, Claude Code, and guardrails",
+      "pages": 4,
+      "paragraphs": [
+        "One Git repo per client project or monorepo with client folders. Use .env for secrets; never commit keys. Branch per feature; main stays deployable. Claude Code reads project context from CLAUDE.md you maintain.",
+        "CLAUDE.md states stack, deploy command, style rules, and off-limits files. Run locally before push. Backup client sites before big edits. Guardrails prevent expensive mistakes."
+      ]
+    },
+    {
+      "heading": "Writing CLAUDE.md that saves hours",
+      "pages": 4,
+      "paragraphs": [
+        "Include: project purpose, tech stack, npm commands, deploy target, design tokens, test checklist. List what Claude must not change: analytics IDs, payment keys, legal pages. Link to brand assets folder. Update after every client style decision.",
+        "Good CLAUDE.md reduces wrong guesses. Share sanitized template between projects. Ultimate tier includes three vertical CLAUDE.md templates. Operators maintain specs; Claude executes."
+      ]
+    },
+    {
+      "heading": "The describe-diff-test loop",
+      "pages": 4,
+      "paragraphs": [
+        "Describe outcome in one paragraph with acceptance criteria. Review diff hunks; reject unrelated changes. Run dev server; click critical paths. Commit with client-readable message.",
+        "Small tasks per prompt beat giant rewrites. Rollback with Git when needed. Screenshot before/after for client updates. Loop is your daily rhythm."
+      ]
+    },
+    {
+      "heading": "Landing page delivery pattern",
+      "pages": 4,
+      "paragraphs": [
+        "Start from static HTML/Tailwind or client Webflow export. Prompt section-by-section: hero, proof, FAQ, CTA. Run Lighthouse; prompt fixes for accessibility and perf. Deploy preview URL for client approval.",
+        "One revision round in scope. Form test mandatory. Handoff Loom plus repo access. 48-hour offers live here."
+      ]
+    },
+    {
+      "heading": "Automation and scripts without fear",
+      "pages": 4,
+      "paragraphs": [
+        "Claude Code writes Node or Python scripts for CSV transforms, API glue, cron jobs. Run on sample data first. Log errors clearly for client handoff. Document how to rerun in README.",
+        "Prefer serverless on client-approved hosts. Idempotent scripts survive retries. Charge setup plus maintenance. Scripts are billable products."
+      ]
+    },
+    {
+      "heading": "WordPress and Webflow boundaries",
+      "pages": 4,
+      "paragraphs": [
+        "For WordPress, limit to theme child edits and custom blocks—not core hacks. Webflow: export when client needs code hosting elsewhere. Document CMS edit instructions for client marketers. Avoid plugin soup.",
+        "Know when to say no to fragile stacks. Charge discovery to audit existing mess. Claude helps read unfamiliar PHP within limits. Sustainable beats clever."
+      ]
+    },
+    {
+      "heading": "Client communication templates",
+      "pages": 4,
+      "paragraphs": [
+        "Daily async update: done, next, blockers. Preview link with password if needed. Change order template for scope additions. Post-launch support window dates in writing.",
+        "Never surprise client with big unreviewed changes. Translate technical fixes to business language. Ultimate includes email templates. Communication retains clients."
+      ]
+    },
+    {
+      "heading": "Pricing operator work",
+      "pages": 4,
+      "paragraphs": [
+        "Fixed price for defined acceptance criteria. Hourly only with cap and weekly report. Retainer for small ongoing tweaks. Rush fees standard.",
+        "Track effective hourly rate per project. Raise after portfolio proof. Do not underbid learning curve—pad first projects. Value price against their launch revenue."
+      ]
+    },
+    {
+      "heading": "QA checklist operators use",
+      "pages": 4,
+      "paragraphs": [
+        "Mobile, forms, links, SEO meta, OG tags, 404, legal links, analytics firing. Cross-browser spot check. Copy spellcheck. Client brand colors and fonts matched.",
+        "Ultimate printable QA list included. Automate visual regression later; manual first. QA is non-billable overhead—price it in. One bug on launch hurts referrals."
+      ]
+    },
+    {
+      "heading": "Security and client data",
+      "pages": 4,
+      "paragraphs": [
+        "Separate client credentials in password manager. Use least-privilege API keys. Delete local copies after offboard when contract requires. NDA defaults for access to their systems.",
+        "Do not paste client secrets into prompts on consumer accounts if policy forbids. Team plans with data controls when scaling. Incident response: notify client fast. Trust is the product."
+      ]
+    },
+    {
+      "heading": "When to subcontract dev work",
+      "pages": 4,
+      "paragraphs": [
+        "Subcontract deep backend, mobile apps, or legacy refactors. You PM, QA, and client comms. Mark up subcontractor fees transparently or white-label. Never subcontract without test plan.",
+        "Build bench before emergency. Review subs' Git hygiene. Operators scale via network. Say no to risky stacks early."
+      ]
+    },
+    {
+      "heading": "Building reusable starter kits",
+      "pages": 4,
+      "paragraphs": [
+        "Cloudflare Pages static starter with contact modal, analytics hook, version label. Tailwind config matching Mercury-clean. Clone per client; customize in hours. Starters increase margin.",
+        "Document starter in internal wiki. Update starters quarterly. Ultimate tier includes starter zip spec. Reuse is lazy profit."
+      ]
+    },
+    {
+      "heading": "From operator to productized agency",
+      "pages": 4,
+      "paragraphs": [
+        "Same delivery three times → productize with checklist and fixed price. Hire second operator with your CLAUDE.md and starters. Sales becomes bottleneck—partner referrals. Micro-SaaS optional later.",
+        "Measure utilization and margin monthly. Fire low-margin clients. LivingPDF tracks tool updates. Operators win on throughput and trust."
+      ]
+    },
+    {
+      "heading": "30-day skill ramp",
+      "pages": 4,
+      "paragraphs": [
+        "Week 1: setup Git, Claude Code, one practice landing page. Week 2: ship for friend or nonprofit portfolio piece. Week 3: paid client at friendly price. Week 4: raise price, document starter kit.",
+        "Daily two-hour practice minimum. Join operator communities for stack tips. Ship publicly (with permission). Billing starts before you feel ready."
+      ]
+    }
+  ]
+}

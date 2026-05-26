@@ -1,0 +1,130 @@
+{
+  "slug": "ai-email-agency",
+  "title": "The AI Email Marketing Agency Blueprint",
+  "cover": "/assets/covers/ai-email-agency.svg",
+  "category": "AI · Email · Living · Ultimate",
+  "totalPages": 56,
+  "currentSection": "Chapter 1 · Agency Positioning",
+  "blocks": [
+    {
+      "heading": "Why email agencies still print cash",
+      "pages": 4,
+      "paragraphs": [
+        "Email drives highest ROI among owned channels when lists are healthy and offers fit. Brands pay retainers because email is recurring, measurable, and tied directly to revenue. AI accelerates copy variants, subject lines, and segmentation ideas—not strategy or brand judgment. Small agencies with tight processes beat bloated firms on speed and price for SMB clients.",
+        "You sell revenue reliability, not 'newsletters'. Pick B2C ecommerce, info products, or B2B SaaS—not all three at launch. Case studies show lift in click rate, revenue per send, or recovery flows. This blueprint assumes you will human-edit every send."
+      ]
+    },
+    {
+      "heading": "Ideal client profile and red flags",
+      "pages": 4,
+      "paragraphs": [
+        "Good fit: $500k–$10M revenue, existing list 5k+, product-market fit, willing to approve fast. Red flags: no list, illegal offers, endless stakeholders, refusal to share metrics. Charge setup fee when migrating ESP or cleaning list. Fire clients who blame email for broken offers.",
+        "Ultimate tier includes ICP scorecard and discovery call script. Vertical focus simplifies template reuse. Ask for Klaviyo or Shopify access in discovery. Without data access, you fly blind."
+      ]
+    },
+    {
+      "heading": "Offer stack: audit, flows, campaigns, retainers",
+      "pages": 4,
+      "paragraphs": [
+        "Audit: deliverability, flow gaps, segment health, $750–$2500. Flow build: welcome, cart, browse, post-purchase, winback. Campaign calendar: 4–8 sends monthly. Retainer bundles flows maintenance plus campaigns.",
+        "Price retainers $1500–$8000 based on list size and send volume. Scope revisions and approval SLAs in contract. Upsell SMS later; master email first. Clear packages reduce sales friction."
+      ]
+    },
+    {
+      "heading": "ESP mastery: Klaviyo-first playbook",
+      "pages": 4,
+      "paragraphs": [
+        "Klaviyo dominates ecommerce; learn segments, flows, campaigns, benchmarks. Deliverability basics: authentication, list hygiene, sunset policies. Use native integrations before custom code. Clone best-practice flows then customize copy and timing.",
+        "Document naming conventions for segments and flows. Test on real accounts, not sandbox only. Alternative: ActiveCampaign for B2B, HubSpot for larger sales-led. Pick primary ESP per vertical."
+      ]
+    },
+    {
+      "heading": "Claude workflows for copy at scale",
+      "pages": 4,
+      "paragraphs": [
+        "Brand voice doc: tone, banned words, example emails, product naming rules. Prompt per email type: promo, story, educational, transactional. Generate three subject lines and preheaders per send. Human selects and edits; never bulk-send raw output.",
+        "Store winning emails as few-shot examples in prompts. Compliance review for claims, discounts, and regulated products. Ultimate tier includes prompt library and QA checklist. Speed without voice consistency churns clients."
+      ]
+    },
+    {
+      "heading": "Flow architecture that recovers revenue",
+      "pages": 4,
+      "paragraphs": [
+        "Welcome series: social proof, education, first purchase incentive—not all discounts. Abandoned cart: three touches with objection handling. Post-purchase: cross-sell, review ask, replenishment timing. Winback before sunset on inactive profiles.",
+        "Measure flow revenue in ESP attribution. A/B test one variable at a time. Do not over-mail; frequency caps matter. Flows work while you sleep—build them first."
+      ]
+    },
+    {
+      "heading": "Campaign calendar rhythm",
+      "pages": 4,
+      "paragraphs": [
+        "Monthly themes aligned to product launches, seasons, and content. Mix promo, value, and community emails. Brief each send: goal, segment, CTA, proof points. Batch production weekly; schedule ahead.",
+        "Hold back inventory for flash needs. Coordinate with paid social to avoid message conflict. Report campaign ROI in weekly snapshot. Predictable calendar reduces client anxiety."
+      ]
+    },
+    {
+      "heading": "Segmentation that beats batch-and-blast",
+      "pages": 4,
+      "paragraphs": [
+        "RFM for ecommerce: recency, frequency, monetary. Engagement tiers: 30/60/90 day opens and clicks. VIP and at-risk segments get different offers. Suppress non-engaged before big sends.",
+        "Claude suggests segment names and rules; you validate in ESP. Smaller relevant sends beat huge irrelevant blasts. Sunset unengaged to protect deliverability. Segmentation is where retainers prove value."
+      ]
+    },
+    {
+      "heading": "Design and dev without bottlenecks",
+      "pages": 4,
+      "paragraphs": [
+        "Use proven modular blocks in ESP; custom HTML only when needed. Mobile-first preview mandatory. Image alt text and plain-text versions for accessibility. Link and coupon QA checklist before schedule.",
+        "Template library per vertical speeds production. Canva for quick graphics; brand kits from clients. Do not chase animated gimmicks that hurt load time. Simple emails often win."
+      ]
+    },
+    {
+      "heading": "Deliverability operations",
+      "pages": 4,
+      "paragraphs": [
+        "Monitor bounce, spam complaint, and unsubscribe rates weekly. Authenticate SPF, DKIM, DMARC. Warm new domains and IPs carefully. Never buy lists.",
+        "Deliverability crises need immediate send pauses and root cause. Partner with deliverability consultant for enterprise. Document list growth sources. Inbox placement is foundation."
+      ]
+    },
+    {
+      "heading": "Reporting clients understand",
+      "pages": 4,
+      "paragraphs": [
+        "Weekly: sends, revenue attributed, flow performance, list growth. Monthly: trends, tests learned, next month plan. Use charts sparingly; lead with sentences. Claude drafts narrative from ESP exports.",
+        "Tie email to business goals, not open rate alone. Set benchmarks by vertical. Bad weeks happen—explain context. Transparency retains retainers."
+      ]
+    },
+    {
+      "heading": "Sales and retention",
+      "pages": 4,
+      "paragraphs": [
+        "Lead with audit or flow teardown Loom for prospects. Case studies with permissioned numbers. Ask for quarterly business reviews. Raise retainer when list or revenue grows.",
+        "Churn signals: slow approvals, blame culture, metric hiding. Save at-risk accounts with test plans. Referrals from Shopify partners and CMO communities. Retention beats new sales cost."
+      ]
+    },
+    {
+      "heading": "Team and delegation",
+      "pages": 3,
+      "paragraphs": [
+        "Roles: strategist (you), copy editor, ESP tech, designer part-time. SOPs for every flow and campaign type. QA second pair of eyes on links and segments. Hire when utilization sustained above eighty percent.",
+        "Offshore editors work with strong voice docs. Never delegate strategy day one. Ultimate tier includes role RACI matrix. Agency scale is process."
+      ]
+    },
+    {
+      "heading": "Compliance and consent",
+      "pages": 3,
+      "paragraphs": [
+        "CAN-SPAM, GDPR, CASL basics in every contract. Clear unsubscribe and physical address. Consent records for EU subscribers. Honest subject lines.",
+        "Regulated industries need legal review. Ultimate includes compliance checklist. Violations kill agencies fast. Ethical list growth only."
+      ]
+    },
+    {
+      "heading": "First 60 days launch plan",
+      "pages": 3,
+      "paragraphs": [
+        "Weeks 1–2: niche, samples, one free teardown for portfolio. Weeks 3–6: two paid audits, one flow build. Weeks 7–8: convert to retainer, refine SOP. Target one to three retainer clients—not guaranteed income.",
+        "Document every build. Productize audit deck. Partner with ecommerce dev shops. Email agency success is measured in client LTV."
+      ]
+    }
+  ]
+}

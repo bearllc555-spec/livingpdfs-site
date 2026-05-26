@@ -1,0 +1,130 @@
+{
+  "slug": "ai-lead-gen",
+  "title": "AI Lead Generation Systems That Book Sales Calls",
+  "cover": "/assets/covers/ai-lead-gen.svg",
+  "category": "AI · Leads · Living · Ultimate",
+  "totalPages": 60,
+  "currentSection": "Chapter 1 · Systems Not Spam",
+  "blocks": [
+    {
+      "heading": "Define a lead gen system",
+      "pages": 4,
+      "paragraphs": [
+        "A system is trigger → enrichment → personalized outreach → booking → nurture → measurement. Random cold blasts are not systems; they burn domains and reputation. AI assists research, copy, and scoring—not bypassing consent laws. Goal is qualified calls on calendar, not vanity reply rates.",
+        "B2B service businesses and high-ticket coaches fit best. Productize for one ICP before expanding. Track cost per booked call and close rate. Ultimate tier includes system diagram worksheet."
+      ]
+    },
+    {
+      "heading": "ICP and offer-market fit",
+      "pages": 4,
+      "paragraphs": [
+        "Document firmographics, triggers, pain, budget, and decision maker. Offer must solve expensive problem: revenue, cost, risk, time. If close rate under fifteen percent, fix offer or ICP before more volume. Interview five recent buyers to extract language.",
+        "Claude synthesizes call notes into messaging doc. Avoid targeting 'everyone with a website'. Vertical focus improves reply quality. Tight ICP beats huge lists."
+      ]
+    },
+    {
+      "heading": "Data sources and enrichment",
+      "pages": 4,
+      "paragraphs": [
+        "Use Apollo, Clay, LinkedIn Sales Nav, or niche directories ethically. Enrich with tech stack, hiring signals, funding, content topics. Verify emails; bounce rates kill deliverability. Do not scrape against platform ToS.",
+        "Build lists in tiers: dream, fit, experiment. Refresh data quarterly; people change jobs. Ultimate includes enrichment prompt templates. Garbage in, garbage out."
+      ]
+    },
+    {
+      "heading": "Scoring leads with AI",
+      "pages": 4,
+      "paragraphs": [
+        "Score on fit, intent, and reachability. Claude reads company site and recent news for one-line relevance. Auto-skip industries you cannot serve. Human reviews top tier before send.",
+        "Scoring reduces wasted sends. Log why leads qualified or disqualified. Improve model rules weekly. Quality lists shrink but convert."
+      ]
+    },
+    {
+      "heading": "Outbound channels that still work",
+      "pages": 4,
+      "paragraphs": [
+        "Email primary for scale; LinkedIn for high-touch; calls for hot inbound. Multi-touch sequences over fourteen days. Each touch adds value: insight, audit, case snippet—not 'just checking in'. Warm calls booked via clear CTA link.",
+        "One channel mastered before adding others. Domain warmup for new email infrastructure. LinkedIn manual sends only—no banned automation. Compliance first."
+      ]
+    },
+    {
+      "heading": "Copy that earns replies",
+      "pages": 4,
+      "paragraphs": [
+        "Subject: specific to them, under seven words when possible. Opening: observation about their business. Body: problem hypothesis, micro proof, low-friction CTA. Ask one question or offer one useful asset.",
+        "Claude drafts variants; you personalize first line manually. Never fake mutual connections or meetings. A/B test subjects on small batches. Reply handling SOP within two hours."
+      ]
+    },
+    {
+      "heading": "Booking infrastructure",
+      "pages": 4,
+      "paragraphs": [
+        "Calendly or Cal.com with qualifying questions. Round-robin for teams. SMS reminder reduces no-shows. CRM stage updates on book.",
+        "Hide calendar link until reply interest. Two time options in email sometimes beat link. Track show rate, not just books. No-show follow-up sequence."
+      ]
+    },
+    {
+      "heading": "Inbound magnets and AI-assisted content",
+      "pages": 4,
+      "paragraphs": [
+        "Audit, calculator, or checklist lead magnets aligned to ICP. Landing page plus thank-you book CTA. Claude helps draft magnet and follow-up emails. Retarget site visitors with ethical pixels.",
+        "Magnets feed outbound retargeting. Quality magnet beats generic ebook. Promote in niche communities without spam. Measure magnet-to-call conversion."
+      ]
+    },
+    {
+      "heading": "Nurture for not-yet-ready leads",
+      "pages": 4,
+      "paragraphs": [
+        "Monthly value email for non-responders who opted in. Case studies and teardown content. Stop after sunset period. Re-engage campaigns quarterly.",
+        "Nurture protects long sales cycles. Segment by objection from replies. Claude drafts newsletter; you add original insight. Do not nurture people who unsubscribed."
+      ]
+    },
+    {
+      "heading": "Handoff to sales",
+      "pages": 4,
+      "paragraphs": [
+        "SDR qualifies on book; AE takes qualified. Brief card: company, pain, assets viewed, personalization notes. Recording optional with consent. SLA: contact within five minutes for inbound hot leads.",
+        "Bad handoff wastes gen spend. Feedback loop from sales to gen weekly. Disqualify criteria documented. RevOps mindset for small teams."
+      ]
+    },
+    {
+      "heading": "Metrics dashboard",
+      "pages": 4,
+      "paragraphs": [
+        "Emails sent, deliverability, reply rate, positive reply rate, meetings booked, show rate, pipeline, closed won. Cost per meeting and CAC payback. Channel comparison monthly. Kill sequences that underperform median.",
+        "Claude narrates weekly report. Share wins with team. Avoid optimizing reply rate alone—optimize revenue. Data beats gut."
+      ]
+    },
+    {
+      "heading": "Compliance and reputation",
+      "pages": 4,
+      "paragraphs": [
+        "CAN-SPAM, GDPR, CASL compliance. One-click unsubscribe. Honor do-not-contact immediately. Rotate domains responsibly; never spoof.",
+        "Ultimate includes compliance checklist. Legal for regulated industries. Reputation takes years to rebuild. Ethical gen compounds."
+      ]
+    },
+    {
+      "heading": "Tool stack",
+      "pages": 4,
+      "paragraphs": [
+        "CRM: HubSpot or Pipedrive. Sequencing: Instantly, Smartlead, or Apollo sequences. Enrichment: Clay workflows. Claude for research and copy drafting.",
+        "Keep stack under few tools. Integrate before adding new shiny app. Document API keys securely. Automate reporting last."
+      ]
+    },
+    {
+      "heading": "Building productized lead gen for clients",
+      "pages": 4,
+      "paragraphs": [
+        "Sell packaged '500 touches/month plus booking infra setup'. Charge setup plus monthly management. Report meetings booked transparently. Do not guarantee closed deals.",
+        "White-label for agencies with your SOP. Case studies require client permission. Raise prices when show rates prove out. Client success is your retention."
+      ]
+    },
+    {
+      "heading": "90-day implementation plan",
+      "pages": 4,
+      "paragraphs": [
+        "Month 1: ICP, list build, sequence v1, booking flow. Month 2: send, measure, iterate copy and scoring. Month 3: add inbound magnet, nurture, hire VA for research. Targets vary—focus on learning speed.",
+        "Ultimate worksheets break weekly tasks. One vertical, one offer, one sequence first. Scale volume only after positive reply rate healthy. Systems beat heroics."
+      ]
+    }
+  ]
+}
