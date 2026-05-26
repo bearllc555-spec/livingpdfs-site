@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="104" viewBox="0 0 72 104">
+  <rect width="72" height="104" fill="#1a1612"/>
+  <rect x="6" y="10" width="60" height="84" fill="#833ab4"/>
+  <circle cx="36" cy="42" r="12" fill="none" stroke="#f6f1e8" stroke-width="2"/>
+  <circle cx="36" cy="42" r="4" fill="#f6f1e8"/>
+  <text x="36" y="68" fill="#f6f1e8" font-family="Georgia, serif" font-size="5" font-weight="700" text-anchor="middle">REELS FOR</text>
+  <text x="36" y="76" fill="#fd1d1d" font-family="Georgia, serif" font-size="5" font-weight="700" text-anchor="middle">LOCAL SHOPS</text>
+</svg>

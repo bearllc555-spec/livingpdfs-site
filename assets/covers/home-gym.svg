@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="104" viewBox="0 0 72 104">
+  <rect width="72" height="104" fill="#2c1810"/>
+  <rect x="8" y="12" width="56" height="80" fill="#8b4513"/>
+  <text x="36" y="38" fill="#f6f1e8" font-family="Georgia, serif" font-size="6.5" font-weight="700" text-anchor="middle">HOME</text>
+  <text x="36" y="48" fill="#f6f1e8" font-family="Georgia, serif" font-size="6.5" font-weight="700" text-anchor="middle">GYM</text>
+  <text x="36" y="58" fill="#c4a574" font-family="Georgia, serif" font-size="5" text-anchor="middle">ON A BUDGET</text>
+</svg>

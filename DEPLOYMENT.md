@@ -1,8 +1,21 @@
 # LivingPDFs — deployment
 
+**Production:** https://livingpdfs.com/ (also https://www.livingpdfs.com/)
 **Dev preview:** https://livingpdfs.pages.dev/
 **GitHub:** https://github.com/bearllc555-spec/livingpdfs-site
 **CF Pages project:** `livingpdfs` (production branch: `dev`)
+**CF zone ID:** `93564b4b572015e77d5f0dc14eeaf9c5` (also in `slatepress/.local/livingpdfs-cf-zone-id.txt`)
+
+## Custom domain (2026-05-26)
+
+Pages custom domains: `livingpdfs.com`, `www.livingpdfs.com`
+
+DNS (proxied CNAME, both → `livingpdfs.pages.dev`):
+
+| Name | Type | Content |
+|------|------|---------|
+| `livingpdfs.com` | CNAME | `livingpdfs.pages.dev` |
+| `www` | CNAME | `livingpdfs.pages.dev` |
 
 ## Ship loop
 
