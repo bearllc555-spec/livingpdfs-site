@@ -113,44 +113,58 @@
             <div class="account-peek__head">
               <div>
                 <p class="account-peek__label"><span class="zone-pill">a0c</span>Inside your account</p>
-                <p class="account-peek__sub">Preview · unlock · stay current</p>
+                <p class="account-peek__sub">Preview the first 20% free — locked pages stay visible</p>
               </div>
               <span class="tag tag--preview">20% free</span>
             </div>
 
-            <div class="account-peek__spread">
-              <article class="account-peek__pane account-peek__pane--open">
-                <div class="account-peek__open-grid">
-                  <div class="pdf-thumb pdf-thumb--peek">
-                    <img src="/assets/covers/micro-saas.svg" alt="" width="72" height="104" loading="eager" decoding="async" />
-                  </div>
-                  <div class="account-peek__open-body">
-                    <p class="account-peek__title">50 AI Micro-SaaS Ideas You Can Build With LLMs</p>
-                    <p class="account-peek__meta">Preview active · pages 1–10 of 51</p>
-                    <div class="account-peek__page" aria-hidden="true">
-                      <div class="account-peek__line account-peek__line--wide"></div>
-                      <div class="account-peek__line"></div>
-                      <div class="account-peek__line"></div>
-                      <div class="account-peek__line account-peek__line--short"></div>
-                    </div>
-                    <div class="preview-bar" aria-hidden="true"><div class="preview-bar__fill" style="width: 20%"></div></div>
-                    <a class="btn btn--primary btn--small" href="/reader.html">Continue preview</a>
-                  </div>
+            <div class="reading-demo">
+              <div class="reading-demo__book">
+                <div class="pdf-thumb pdf-thumb--peek">
+                  <img src="/assets/covers/micro-saas.svg" alt="" width="72" height="104" loading="eager" decoding="async" />
                 </div>
-              </article>
+                <div class="reading-demo__intro">
+                  <p class="reading-demo__title">50 AI Micro-SaaS Ideas You Can Build With LLMs</p>
+                  <p class="reading-demo__status">Preview active in your library · 51 pages total</p>
+                </div>
+              </div>
 
-              <article class="account-peek__pane account-peek__pane--sealed">
-                <div class="lock-icon lock-icon--peek" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.75" />
-                    <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
-                  </svg>
+              <div class="page-map" aria-label="51 pages: 10 open for preview, 41 locked until unlock">
+                <div class="page-map__legend">
+                  <span class="page-map__key page-map__key--open">Open now</span>
+                  <span class="page-map__key page-map__key--locked">Locked until unlock</span>
                 </div>
-                <p class="account-peek__title">Pages 11–51</p>
-                <p class="account-peek__meta">Locked until you unlock the full LivingPDF</p>
-                <p class="account-peek__locked-count"><strong>41 pages</strong> remain sealed</p>
+                <div class="page-map__track">
+                  <div class="page-map__segment page-map__segment--open" style="width: 19.61%">
+                    <span>1–10</span>
+                    <strong>10 pages free</strong>
+                  </div>
+                  <div class="page-map__segment page-map__segment--locked">
+                    <span>11–51</span>
+                    <strong>41 pages locked</strong>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="reading-demo__stats">
+                <li>
+                  <span class="reading-demo__stat-num">10</span>
+                  <span class="reading-demo__stat-label">pages reading now</span>
+                </li>
+                <li>
+                  <span class="reading-demo__stat-num">41</span>
+                  <span class="reading-demo__stat-label">pages after unlock</span>
+                </li>
+                <li>
+                  <span class="reading-demo__stat-num">51</span>
+                  <span class="reading-demo__stat-label">pages in full edition</span>
+                </li>
+              </ul>
+
+              <div class="reading-demo__actions">
+                <a class="btn btn--primary btn--small" href="/reader.html">Continue preview</a>
                 <a class="btn btn--copper btn--small" href="/pricing.html">Unlock full LivingPDF</a>
-              </article>
+              </div>
             </div>
 
             <p class="account-peek__foot"><a href="/reader.html">See the full reader experience →</a></p>
