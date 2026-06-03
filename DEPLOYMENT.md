@@ -5,8 +5,8 @@
 | Target | URL |
 |--------|-----|
 | Production | https://livingpdfs.pages.dev/ · https://livingpdfs.com/ |
-| GitHub (app) | https://github.com/bearllc555-spec/livingpdfs-com |
-| GitHub (monorepo) | https://github.com/bearllc555-spec/livingpdfs-site |
+| GitHub (source) | https://github.com/bearllc555-spec/livingpdfs-site |
+| Legacy (retire after cutover) | https://github.com/bearllc555-spec/livingpdfs-com |
 
 **CF Pages project:** `livingpdfs` · **Account ID:** `e0f6f68f26f8a26a75eaa793385019ef`  
 **Production CF branch:** `dev` (`dev` or `main` git pushes map to CF `dev`)
@@ -28,10 +28,14 @@ Open http://localhost:3003/
 
 ## GitHub Actions secrets
 
+Add in **bearllc555-spec/livingpdfs-site** → Settings → Secrets and variables → Actions (copy from livingpdfs-com if it already has them):
+
 | Secret | Value |
 |--------|--------|
 | `CLOUDFLARE_API_TOKEN` | Pages Edit token (`.local/cf-pages-token.txt`) |
 | `CLOUDFLARE_ACCOUNT_ID` | `e0f6f68f26f8a26a75eaa793385019ef` |
+
+Until both secrets exist, pushes build but the deploy step fails. Re-run the failed workflow from the Actions tab after adding secrets.
 
 ## Manual deploy
 
