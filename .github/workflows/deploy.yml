@@ -1,11 +1,11 @@
-# Deploy static site to Cloudflare Pages on every branch push.
+# Deploy Vite build to Cloudflare Pages (project: livingpdfs).
 #
-# Required repo secrets:
-#   CLOUDFLARE_API_TOKEN  — Account -> Cloudflare Pages -> Edit
-#   CLOUDFLARE_ACCOUNT_ID — e0f6f68f26f8a26a75eaa793385019ef
+# Required GitHub repo secrets:
+#   CLOUDFLARE_API_TOKEN  - Account -> Cloudflare Pages -> Edit
+#   CLOUDFLARE_ACCOUNT_ID - e0f6f68f26f8a26a75eaa793385019ef
 #
-# Branch previews: <branch-slug>.livingpdfs.pages.dev
-# Production branch on CF: dev -> https://livingpdfs.pages.dev/
+# dev branch pushes deploy to CF branch "dev" (production: livingpdfs.com).
+# Other branches: preview at <branch-slug>.livingpdfs.pages.dev
 
 name: Deploy to Cloudflare Pages
 
@@ -27,17 +27,31 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: 003/package-lock.json
 
-      - name: Build site (003 at root)
-        run: node scripts/build-site.mjs
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+          node scripts/prepare-pages.mjs
 
-      - name: Compute branch slug
-        id: slug
-        run: echo "slug=$(echo '${{ github.ref_name }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
+      - name: Cloudflare branch
+        id: cf
+        run: |
+          if [ "${{ github.ref_name }}" = "dev" ] || [ "${{ github.ref_name }}" = "main" ]; then
+            echo "branch=dev" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=$(echo '${{ github.ref_name }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
+          fi
 
-      - uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=livingpdfs --branch=${{ steps.slug.outputs.slug }} --commit-dirty=true
+      - name: Install Wrangler
+        run: npm install -g wrangler@3.90.0
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >
+          wrangler pages deploy _pages
+          --project-name=livingpdfs
+          --branch=${{ steps.cf.outputs.branch }}
+          --commit-dirty=true

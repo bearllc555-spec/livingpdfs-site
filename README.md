@@ -1,10 +1,20 @@
-# livingpdfs-site
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-Static site for **LivingPDFs** on Cloudflare Pages.
+# Run and deploy your AI Studio app
 
-- **Production:** https://livingpdfs.com/
-- **Preview:** https://livingpdfs.pages.dev/
-- **GitHub:** https://github.com/bearllc555-spec/livingpdfs-site
-- **CF project:** `livingpdfs` (production branch: `dev`)
+This contains everything you need to run your app locally.
 
-See `DEPLOYMENT.md` for the ship loop.
+View your app in AI Studio: https://ai.studio/apps/e057e56e-d83b-4c28-9898-d496649e9e28
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

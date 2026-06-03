@@ -1,4 +1,10 @@
 node_modules/
-003/node_modules/
+dist/
+_pages/
+_site/
 .wrangler/
 private/
+scripts/
+docs/
+ss-*.png
+verify-*.png
