@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Preview 003 (local)",
+      "command": "${input:openLivingPdfs003}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "echo": false,
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Preview 001 (local)",
+      "command": "${input:openLivingPdfs001}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "echo": false,
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Preview livingpdfs.com",
+      "command": "${input:openLivingPdfs}",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "echo": false,
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "openLivingPdfs003",
+      "type": "command",
+      "command": "simpleBrowser.show",
+      "args": ["http://localhost:3003/"]
+    },
+    {
+      "id": "openLivingPdfs001",
+      "type": "command",
+      "command": "simpleBrowser.show",
+      "args": ["http://localhost:8765/001/"]
+    },
+    {
+      "id": "openLivingPdfs",
+      "type": "command",
+      "command": "simpleBrowser.show",
+      "args": ["https://livingpdfs.com"]
+    }
+  ]
+}

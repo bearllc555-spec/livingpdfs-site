@@ -23,6 +23,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: 003/package-lock.json
+
+      - name: Build site (003 at root)
+        run: node scripts/build-site.mjs
+
       - name: Compute branch slug
         id: slug
         run: echo "slug=$(echo '${{ github.ref_name }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
@@ -31,4 +40,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=livingpdfs --branch=${{ steps.slug.outputs.slug }} --commit-dirty=true
+          command: pages deploy _site --project-name=livingpdfs --branch=${{ steps.slug.outputs.slug }} --commit-dirty=true

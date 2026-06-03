@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#021c12" />
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.88" />
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.2" />
+      <stop offset="85%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="92%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="300" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Vignette overlay for depth -->
+  <rect width="300" height="400" fill="url(#vignette)" />
+
+  <!-- Grid lines -->
+  <path d="M 0 40 L 300 40 M 0 80 L 300 80 M 0 120 L 300 120 M 0 160 L 300 160 M 0 200 L 300 200 M 0 240 L 300 240 M 0 280 L 300 280 M 0 320 L 300 320 M 0 360 L 300 360" stroke="rgba(16, 185, 129, 0.05)" stroke-width="1" />
+  <path d="M 30 0 L 30 400 M 60 0 L 60 400 M 90 0 L 90 400 M 120 0 L 120 400 M 150 0 L 150 400 M 180 0 L 180 400 M 210 0 L 210 400 M 240 0 L 240 400 M 270 0 L 270 400" stroke="rgba(16, 185, 129, 0.05)" stroke-width="1" />
+
+  <!-- Technical blueprint lines (Security Nodes and Key-Locks) -->
+  <circle cx="150" cy="180" r="50" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" stroke-opacity="0.3" />
+  <circle cx="150" cy="180" r="62" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="3, 5" />
+  <circle cx="150" cy="180" r="32" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-dasharray="5, 3" />
+
+  <!-- Shield Vector Graphic (Hacker / Sec Core) -->
+  <g transform="translate(133, 162)">
+    <path d="M12,2 L2,6 L2,12 C2,18 12,22 12,22 C12,22 22,18 22,12 L22,6 L12,2 Z" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M12,6 L12,18" stroke="#10b981" stroke-width="1" stroke-dasharray="2, 2" />
+    <path d="M7,11 L17,11" stroke="#10b981" stroke-width="1" stroke-dasharray="2, 2" />
+  </g>
+
+  <!-- Typography & Styling -->
+  <text x="150" y="270" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="900" letter-spacing="3" text-anchor="middle">SECURITY &amp; SYSTEM AUDITS</text>
+  
+  <text x="150" y="300" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="900" letter-spacing="-0.5" text-anchor="middle">WEB SECURITY &amp;</text>
+  <text x="150" y="316" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="900" letter-spacing="-0.5" text-anchor="middle">PENETRATION</text>
+  <text x="150" y="332" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="950" letter-spacing="-0.5" text-anchor="middle">ENGINEERING MANUAL</text>
+  
+  <text x="150" y="352" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" letter-spacing="1" text-anchor="middle">KEVIN MITNICK</text>
+
+  <!-- Header badge -->
+  <rect x="15" y="15" width="270" height="20" fill="rgba(255,255,255,0.05)" rx="3" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  <text x="25" y="27" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold" letter-spacing="1">LIVING PDF SERIES</text>
+  <text x="275" y="27" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="black" text-anchor="end">v2.1.0</text>
+  
+  <!-- Footer elements -->
+  <path d="M 15 370 L 285 370" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+  <text x="15" y="384" fill="#047857" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="bold">52 PAGES</text>
+  
+  <!-- Barcode -->
+  <g transform="translate(215, 375)">
+    <rect x="0" y="0" width="1.5" height="12" fill="#94a3b8" />
+    <rect x="3" y="0" width="0.5" height="12" fill="#94a3b8" />
+    <rect x="5" y="0" width="2" height="12" fill="#94a3b8" />
+    <rect x="9" y="0" width="1" height="12" fill="#94a3b8" />
+    <rect x="11" y="0" width="0.5" height="12" fill="#94a3b8" />
+    <rect x="13" y="0" width="1.5" height="12" fill="#94a3b8" />
+    <rect x="16" y="0" width="0.5" height="12" fill="#94a3b8" />
+    <rect x="18" y="0" width="1.5" height="12" fill="#94a3b8" />
+    <rect x="21" y="0" width="2" height="12" fill="#94a3b8" />
+    <rect x="25" y="0" width="1" height="12" fill="#94a3b8" />
+    <rect x="28" y="0" width="2" height="12" fill="#94a3b8" />
+    <rect x="31" y="0" width="0.5" height="12" fill="#94a3b8" />
+    <rect x="33" y="0" width="1.5" height="12" fill="#94a3b8" />
+    <rect x="36" y="0" width="1" height="12" fill="#94a3b8" />
+    <rect x="40" y="0" width="2" height="12" fill="#94a3b8" />
+    <rect x="44" y="0" width="0.5" height="12" fill="#94a3b8" />
+    <rect x="46" y="0" width="2.5" height="12" fill="#94a3b8" />
+    <rect x="50" y="0" width="1" height="12" fill="#94a3b8" />
+    <rect x="52" y="0" width="1.5" height="12" fill="#94a3b8" />
+    <rect x="55" y="0" width="0.5" height="12" fill="#94a3b8" />
+  </g>
+
+  <!-- 3D book spine shadow -->
+  <rect x="0" y="0" width="12" height="400" fill="url(#spineGrad)" />
+</svg>

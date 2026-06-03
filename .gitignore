@@ -1,5 +1,9 @@
 .wrangler/
 node_modules/
+003/node_modules/
+003/dist/
+_site/
 .DS_Store
 ss-*.png
 verify-*.png
+private/

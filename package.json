@@ -1,0 +1,26 @@
+{
+  "name": "livingpdfs-site",
+  "version": "1.0.0",
+  "description": "Static site for **LivingPDFs** on Cloudflare Pages.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --prefix 003",
+    "build:site": "node scripts/build-site.mjs",
+    "generate-pdfs": "python scripts/generate-pdfs.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearllc555-spec/livingpdfs-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bearllc555-spec/livingpdfs-site/issues"
+  },
+  "homepage": "https://github.com/bearllc555-spec/livingpdfs-site#readme",
+  "devDependencies": {
+    "pdfjs-dist": "^4.10.38"
+  }
+}

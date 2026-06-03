@@ -1,0 +1,6 @@
+{
+  "name": "Living PDFs",
+  "description": "An interactive, online-first living document reader and marketplace platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
