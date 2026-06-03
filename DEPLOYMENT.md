@@ -27,8 +27,7 @@ DNS (proxied CNAME, both → `livingpdfs.pages.dev`):
 ## Site layout
 
 - **`/` (production home)** — built from `003/` (Vite + React). CI runs `node scripts/build-site.mjs` and deploys `_site/`.
-- **`/001/`, `/002/`** — legacy static concepts (still copied into `_site` on deploy).
-- **`/concepts/`** — archive index linking to main + older concepts.
+- Canonical app source for Cloudflare: **github.com/bearllc555-spec/livingpdfs-com** (flat repo, same `003/` code).
 
 Local dev: `npm run dev` from repo root (or `cd 003 && npm run dev`) → http://localhost:3003/
 

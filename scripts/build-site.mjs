@@ -1,5 +1,5 @@
 /**
- * Assemble Cloudflare Pages output: 003 React app at /, legacy concepts at /001, /002.
+ * Assemble Cloudflare Pages output: 003 React app at /.
  */
 import { cpSync, existsSync, mkdirSync, rmSync } from "fs";
 import { execSync } from "child_process";
@@ -36,11 +36,6 @@ for (const name of ["server.cjs", "server.cjs.map"]) {
   rmSync(path.join(siteDir, name), { force: true });
 }
 
-for (const concept of ["001", "002"]) {
-  copyDir(path.join(root, concept), path.join(siteDir, concept));
-}
-
-copyDir(path.join(root, "concepts"), path.join(siteDir, "concepts"));
 copyDir(path.join(root, "functions"), path.join(siteDir, "functions"));
 cpSync(path.join(root, "_redirects"), path.join(siteDir, "_redirects"));
 

@@ -17,17 +17,6 @@
       }
     },
     {
-      "label": "Preview 001 (local)",
-      "command": "${input:openLivingPdfs001}",
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "never",
-        "echo": false,
-        "focus": false,
-        "panel": "shared"
-      }
-    },
-    {
       "label": "Preview livingpdfs.com",
       "command": "${input:openLivingPdfs}",
       "problemMatcher": [],
@@ -45,12 +34,6 @@
       "type": "command",
       "command": "simpleBrowser.show",
       "args": ["http://localhost:3003/"]
-    },
-    {
-      "id": "openLivingPdfs001",
-      "type": "command",
-      "command": "simpleBrowser.show",
-      "args": ["http://localhost:8765/001/"]
     },
     {
       "id": "openLivingPdfs",
