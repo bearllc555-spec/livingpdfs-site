@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Book, UserProfile, ReadingProgress, AppNotification } from '../types';
 import { mockBooks } from '../data/mockBooks';
-import { APP_VERSION } from '../lib/version';
 
 interface AppContextType {
   user: UserProfile;
@@ -31,7 +30,6 @@ interface AppContextType {
   addNotification: (bookId: string, title: string, message: string) => void;
   triggerLivingUpdate: (bookId: string) => void;
   subscribeToBook: (bookId: string, tier: string) => void;
-  appVersion: string;
 }
 
 const defaultUser: UserProfile = {
@@ -147,14 +145,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return saved ? JSON.parse(saved) : false;
   });
   const [syncStatus, setSyncStatus] = useState<'synced' | 'syncing' | 'error'>('synced');
-  const [appVersion, setAppVersion] = useState(() => {
-    return localStorage.getItem('sp_app_version') || APP_VERSION;
-  });
-
-  useEffect(() => {
-    localStorage.setItem('sp_app_version', appVersion);
-  }, [appVersion]);
-
   // Sync state to local storage
   useEffect(() => {
     localStorage.setItem('sp_user', JSON.stringify(user));
@@ -193,6 +183,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     localStorage.setItem('sp_is_reader_open', String(isReaderOpen));
   }, [isReaderOpen]);
 
+  useEffect(() => {
+    localStorage.removeItem('sp_app_version');
+  }, []);
+
   // Look for bookId in URL query parameters on mount to support opening the dynamic reader in a new tab
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -209,17 +203,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setSyncStatus('syncing');
     setTimeout(() => {
       setSyncStatus('synced');
-      setAppVersion(prev => {
-        const parts = prev.substring(1).split('.').map(Number);
-        if (parts.length >= 3) {
-          parts[2] += 1;
-        } else if (parts.length === 2) {
-          parts[1] += 1;
-        } else {
-          parts[0] += 1;
-        }
-        return 'v' + parts.join('.');
-      });
     }, 5000);
   };
 
@@ -444,17 +427,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       `Author ${targetBook.author} published version ${nextVer} of ${targetBook.title}. High priority security patterns, typographic styling fixes, and index tables have been refreshed. Click to update your copies.`
     );
 
-    setAppVersion(prev => {
-      const parts = prev.substring(1).split('.').map(Number);
-      if (parts.length >= 3) {
-        parts[2] += 1;
-      } else if (parts.length === 2) {
-        parts[1] += 1;
-      } else {
-        parts[0] += 1;
-      }
-      return 'v' + parts.join('.');
-    });
   };
 
   return (
@@ -486,8 +458,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         markNotificationRead,
         addNotification,
         triggerLivingUpdate,
-        subscribeToBook,
-        appVersion
+        subscribeToBook
       }}
     >
       {children}

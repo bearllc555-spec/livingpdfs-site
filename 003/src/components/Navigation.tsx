@@ -3,6 +3,7 @@ import { useApp } from '../context/AppContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookCover } from './BookCover';
 import { BookThumbnail } from './BookThumbnail';
+import { SITE_VERSION } from '../lib/version';
 import { 
   BookOpen, 
   Library, 
@@ -33,7 +34,6 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenAuth }) => {
     toggleSaveBook,
     setSelectedBookId,
     setIsReaderOpen,
-    appVersion
   } = useApp();
 
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
@@ -52,7 +52,7 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenAuth }) => {
               LivingPDFs
             </span>
             <span className="font-mono text-[9px] font-bold bg-[#EAE6DF] text-gray-700 dark:bg-zinc-900 dark:text-zinc-400 px-1 py-0.5 rounded-none leading-none select-none">
-              {appVersion}
+              {SITE_VERSION}
             </span>
           </div>
         </div>

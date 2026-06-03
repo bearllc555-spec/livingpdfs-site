@@ -1,1 +1,2 @@
-export const APP_VERSION = "v1.3.0";
+/** Deploy tell — shown in header/footer; bump on each ship. */
+export const SITE_VERSION = "v1.3.1";
